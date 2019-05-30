@@ -8,13 +8,11 @@ class TeamTypes extends Component {
 
     switch (this.props.area) {
       case "business":
-        team = (
-          <div className="business">{this.props.teamLabel} / Buisness</div>
-        );
-        break;
       case "engineering":
         team = (
-          <div className="engineering">{this.props.teamLabel} /Engineering</div>
+          <div className={this.props.area}>
+            {this.props.teamLabel} / {this.props.capacity}
+          </div>
         );
         break;
       default:
