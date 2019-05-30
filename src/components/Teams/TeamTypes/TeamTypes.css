@@ -1,0 +1,17 @@
+.engineering {
+    width: 25%;
+    height: 10%;
+    margin: 2px auto;
+    border-radius: 15px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.business {
+    width: 30%;
+    height: 12%;
+    margin: 2px auto;
+    border-radius: 20px;
+    background-color: yellow;
+    text-align: center;
+}

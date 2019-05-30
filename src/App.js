@@ -1,12 +1,12 @@
-import React from 'react';
-import Layout from './components/Layout';
-import TeamsBuidler from './containers/TeamsBuilder';
+import React from "react";
+import Layout from "./components/Layout";
+import TeamsBuilder from "./containers/TeamsBuilder";
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <TeamsBuidler />
+        <TeamsBuilder />
       </Layout>
     </div>
   );

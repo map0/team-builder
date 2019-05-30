@@ -1,10 +1,11 @@
 import React from "react";
+import "./Layout.css";
 
 const Layout = props => {
   return (
     <>
       <div>Navigation Placeholder</div>
-      <main>{props.children}</main>
+      <main className="content">{props.children}</main>
     </>
   );
 };
