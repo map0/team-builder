@@ -4,7 +4,7 @@ import "./Layout.css";
 const Layout = props => {
   return (
     <>
-      <div>Navigation Placeholder</div>
+      <div className="navigation">&nbsp;</div>
       <main className="content">{props.children}</main>
     </>
   );
