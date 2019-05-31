@@ -1,19 +1,23 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./TeamTypes.css";
+import "./Teams.css";
 
-class TeamTypes extends Component {
+class Teams extends Component {
   render() {
     let team = null;
     const { maxCapacity } = this.props;
-    const layerWidth = (this.props.capacity / maxCapacity) * 100; // TODO pull magin nums
+    let layerWidth = (this.props.capacity / maxCapacity) * 100;
+
+    if (layerWidth === 0) {
+      layerWidth = 5
+    }
 
     switch (this.props.area) {
       case "business":
       case "engineering":
         team = (
           <div className={this.props.area} style={{ width: `${layerWidth}%` }}>
-            {this.props.teamLabel} / {this.props.capacity}
+            {this.props.teamLabel} / {this.props.capacity ? this.props.capacity: ':-('}
           </div>
         );
         break;
@@ -24,12 +28,12 @@ class TeamTypes extends Component {
   }
 }
 
-TeamTypes.propTypes = {
+Teams.propTypes = {
   area: PropTypes.string.isRequired
 };
 
-TeamTypes.defaultProps = {
+Teams.defaultProps = {
   teamLabel: "Unknown"
 };
 
-export default TeamTypes;
+export default Teams;

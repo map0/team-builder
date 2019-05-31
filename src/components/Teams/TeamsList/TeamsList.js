@@ -1,5 +1,5 @@
 import React from "react";
-import TeamTypes from "../TeamTypes/TeamTypes";
+import Team from "../TeamTypes/Team";
 import "./TeamsList.css";
 
 const TeamsList = props => {
@@ -12,7 +12,7 @@ const TeamsList = props => {
 
   const teams = props.teams.map(team => {
     return (
-      <TeamTypes
+      <Team
         key={team.id}
         teamLabel={team.teamLabel}
         area={team.area}
