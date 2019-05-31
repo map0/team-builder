@@ -1,5 +1,4 @@
 .engineering {
-    width: 25%;
     height: 10%;
     margin: 2px auto;
     border-radius: 15px;
@@ -8,7 +7,6 @@
 }
 
 .business {
-    width: 25%;
     height: 12%;
     margin: 2px auto;
     border-radius: 20px;
