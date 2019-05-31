@@ -3,17 +3,22 @@ import BuildConrol from "./BuildControl";
 import "./BuildControlsList.css";
 
 const controls = [
-  { label: "HR", area: "hr" },
-  { label: "Dev", area: "dev" },
-  { label: "Delivery", area: "delivery" },
-  { label: "Finances", area: "finances" }
+  { label: "hr", area: "hr" },
+  { label: "dev", area: "dev" },
+  { label: "delivery", area: "delivery" },
+  { label: "RnD", area: "RnD" },
+  { label: "assistant", area: "assistant" }
 ];
 
 const BuildConrolsList = props => {
   return (
     <div className="buildControls">
       {controls.map(ctrl => (
-        <BuildConrol key={ctrl.label} label={ctrl.label} />
+        <BuildConrol
+          key={ctrl.label}
+          label={ctrl.label}
+          updateTeam={props.updateTeam}
+        />
       ))}
     </div>
   );
