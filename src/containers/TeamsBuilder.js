@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import TeamsList from "../components/Teams/TeamsList/TeamsList";
+import BuildConrolsList from '../components/Teams/BuildControls/BuildConrolsList'
 
 class TeamsBuilder extends Component {
   state = {
     teams: [
       {
-        id: 'scvg2322',
+        id: "scvg2322",
         teamLabel: "dev",
         area: "engineering",
         capacity: 5,
@@ -13,7 +14,7 @@ class TeamsBuilder extends Component {
         tags: ["front-end", "back-end", "full-stack"]
       },
       {
-        id: 'joi324',
+        id: "joi324",
         teamLabel: "hr",
         area: "business",
         capacity: 2,
@@ -21,7 +22,7 @@ class TeamsBuilder extends Component {
         tags: ["human"]
       },
       {
-        id: 'oiiwe3443',
+        id: "oiiwe3443",
         teamLabel: "delivery",
         area: "business",
         capacity: 1,
@@ -35,7 +36,7 @@ class TeamsBuilder extends Component {
     return (
       <>
         <TeamsList teams={this.state.teams} />
-        <div>Team build controls</div>
+        <BuildConrolsList />
       </>
     );
   }
