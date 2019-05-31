@@ -22,7 +22,11 @@ const TeamsList = props => {
     );
   });
 
-  return <div className="pad-5">{teams}</div>;
+  if (teams.length === 0) {
+    return <div className="pad-5"><p>Lonely planet.. Please add some teams</p></div>;
+  } else {
+    return <div className="pad-5">{teams}</div>;
+  }
 };
 
 export default TeamsList;
