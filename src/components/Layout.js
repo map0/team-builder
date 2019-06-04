@@ -1,10 +1,11 @@
 import React from "react";
 import "./Layout.css";
+import NavItems from "./NavItems/NavItems";
 
 const Layout = props => {
   return (
     <>
-      <div className="navigation">&nbsp;</div>
+      <NavItems />
       <main className="content">{props.children}</main>
     </>
   );
