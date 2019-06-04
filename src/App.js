@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import TeamsBuilder from "./containers/TeamsBuilder";
+import Profile from './components/Profile/Profile'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Route path="/" exact component={TeamsBuilder} />
         <Route
           path="/profile"
-          render={() => <h3>profile page placeholder</h3>}
+          component={Profile}
         />
       </Layout>
     </div>
