@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import faker from "faker";
-import axios from "axios";
 
 class Profile extends Component {
   state = {
