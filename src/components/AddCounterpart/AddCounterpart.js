@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import './AddCounterpat.css'
 class AddCounterpart extends Component {
   state = {
     name: "",

@@ -1,4 +1,5 @@
 import React from "react";
+import './Counterpart.css';
 
 const counterpart = props => (
   <div className="Person" onClick={props.clicked}>
